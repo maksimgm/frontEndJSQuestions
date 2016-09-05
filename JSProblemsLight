@@ -49,6 +49,14 @@ checkObjectEquality(objectOne,objectTwo)
 
 5)As [] is true, [] == true should also be true. right?
 
+== does implicit coercion. Since the left and right side of the 
+equality are two different types, JS can't compare them directly. 
+Hence under the hood, JS will convert them to compare. First right 
+side of the equality will be cooereced to a number and number fo true
+would be 1. After that JS will try to convert [] by using toPrimitive.
+Since [].valueof is not a primitive will use toString and will get ""
+
+
 6)How could you write a method on instance of a date which will give you next day?
 
 7)If you want to use an arbitrary object as value of this, how will you do that?
