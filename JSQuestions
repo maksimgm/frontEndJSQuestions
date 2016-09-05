@@ -1,0 +1,45 @@
+// CONCEPTUAL MUSTS!!!
+
+/*
+1) Can you name teo programming paradigms important for JavaScript developers?
+  JavaScript is a multi-paradigm language, supporting imperative prgramming
+  along with OOP and functional programming. JS supports OOP with prototypal
+  inheritence. 
+
+2) What is functional programming?
+  Functional programming produces programs by composing mathematical functions
+  and avoids shared state & mutable data. Functional programming is an essential
+  concept in JS(one of the two pillars of JS).
+      -Pure functions --> Seperations of concerns
+
+3) What is the difference between classical inheritance and prototypal inheritance?
+  Class inheritance: Instances inherit from classes(like a blueprint-- a description
+  of the class), and create sub-class relationships: heirarchical class taxonomies.
+  Instances are typically instantiated via constructor functions with the 'new' keyword.
+  Class inheritance may or may not use the 'class' keyword from ES6.
+
+
+  Prototypal Inheritance: instances inherit directly from other objects. Instances are
+  typically instantiated via factory funtions or 'Object.create()'. Instances may be 
+  composed from many difference objects, allowing fromeasy selective inheritance.
+
+4) What are the pros and cons of functional prgramming v. OOP?
+  OOP pros: Easy to understand the basic concept of objects and easy to interpret the 
+  meaning of method calls. OOP tends to use an inperative style rather than a declarative 
+  style.
+
+  OOP cons: OOP typically depends on chared state. Objects and behaviors are typically 
+  tacked together on the same entity, which may be accessed at random by any number of 
+  functions, whihc may lead to undesirable behavior
+
+  FP pros: Using FP paradigm, programmers avoid any shared state or side-effects, which
+  eliminates bugs caused by multiple functions competing for the same resources. 
+
+  FP cons: Can potentially lead to reduced readability because the resulting code is 
+  often more abstractly specified, and less concrete. Has a much steeper learning curve 
+  than OOP because of the broad popularity of OOP.
+
+  CONTINUE QUESTION SET BELOW
+  https://medium.com/javascript-scene/10-interview-questions-every-javascript-developer-should-know-6fa6bdf5ad95#.xnink6cm4
+
+*/
