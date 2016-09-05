@@ -1,0 +1,82 @@
+/*
+
+1)What are the differences between null and undefined?
+
+undefined means, calue of the variable is not defined. JS has a 
+global variable undefined whose value is, 'undefined' and typeof 
+undefined is also 'undefined'. Remember, undefined is not a constant 
+or a keyword. Undefined is a type wih exactly one value: undefined.
+Assigning a new value to it does not change the value of the type
+undefined.
+
+null means empty or non-existent value which is used to indicate 'no value'.
+Null is a primirtive value and you can assign null to any variable. null
+is not an object, it is a primitive value. For example, you cannot add
+properties to it. Sometimes poeple wrongly assume that it is an object, 
+because typeof returns 'object'.
+
+2)What are the differences between == and ===?
+
+== will not check for type, whereas === will
+
+3)How would you compare two objects in JavaScript?
+*/
+var objectOne = {a:"super", b:"man", c: 3};
+var objectTwo = {a:"super", b:"man", c: 3};
+
+function checkObjectEquality(a,b){
+  var aProps = Object.getOwnPropertyNames(a);
+  var bProps = Object.getOwnPropertyNames(b);
+  
+  if(aProps.length !== bProps.length){
+    return false;
+  } 
+
+  for(var i=0; i<aProps.length; i++){
+    var propName = aProps[i];
+
+    if(a[propName] !== b[propName]){
+      return false;
+    }
+  }
+  return true;
+}
+
+/*
+checkObjectEquality(objectOne,objectTwo)
+
+4)11+ true false related questions that will trick you.
+
+5)As [] is true, [] == true should also be true. right?
+
+6)How could you write a method on instance of a date which will give you next day?
+
+7)If you want to use an arbitrary object as value of this, how will you do that?
+
+8)Write a simple function to tell whether 2 is passed as parameter or not?
+
+9)How could you use Math.max to find the max value in an array?
+
+10)What the heck is this in JavaScript?
+
+11)21 quick questions that will trick you.
+
+12)How could you set a prefix before everything you log? for example, if you log('my message') it will log: "(app) my message"
+
+13)What will you see in the console for the following example?
+
+14)Look at the code below, you have a for loop if you have setTimeout inside it. If log the loop counter inside setTimeout, what will be logged?
+
+15)Look at the code below, I have a property in a object and I am creating a new object where I am setting it to a new value. If I delete that property what will i get if I try to access that property?
+
+16)Does JavaScript pass parameter by value or by reference?
+
+17)How could you implement cache to save calculation time for a recursive fibonacci function?
+
+18)How could you cache execution of any function?
+
+19)If you need to implement the following chaining with call back, how will you implement it?
+
+20)How would you implement currying for any functions?
+
+*/
